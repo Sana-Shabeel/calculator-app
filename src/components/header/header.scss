@@ -1,0 +1,12 @@
+.dot-container {
+  width: 4rem;
+  height: 2rem;
+
+  .dot {
+    width: 1.8rem;
+    height: 18rem;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+  }
+}
