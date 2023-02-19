@@ -36,6 +36,12 @@
   --t3-very-dark-voilet: hsl(268, 47%, 21%);
   --t3-dark-magenta-shadow: hsl(290, 70%, 36%);
 
+  --t1-dark-gray-blue: hsl(221, 14%, 31%);
+  --white: hsl(0, 0, 100%);
+  --t2-dark-gray-yellow: hsl(221, 14%, 31%);
+  --t3-light-yellow: hsl(221, 14%, 31%);
+  --t3-dark-blue: hsl(198, 20%, 13%);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -47,13 +53,18 @@
   --main-bg: var(--t1-main-bg);
   --toggle-keypad-bg: var(--t1-toggle-keypad-bg);
   --screen-bg: var(--t1-screen-bg);
-
+  /* keys */
   --t1-key-del-bg: var(--t1-dark-blue);
   --t1-key-shadow: var(--t1-dark-blue-shadow);
   --t1-key-bg-toggle: var(--t1-red-bg);
   --t1-key-bg-toggle-shadow: var(--t1-red-bg-shadow);
   --t1-key-bg: var(--t1-light-grayish-orange);
   --t1-key-bg-shadow: hsl(--t1-grayish-orange-shadow);
+
+  /* text */
+  --key-text: var(--t1-dark-gray-blue);
+  --del-key-text: var(--white);
+  --display-text: var(--white);
 }
 .theme2 {
   --main-bg: var(--t2-main-bg);
@@ -66,6 +77,11 @@
   --t2-key-bg-toggle-shadow: var(--t2-orange-bg-shadow);
   --t2-key-bg: var(--t2-light-grayish-yellow);
   --t2-key-bg-shadow: hsl(--t2-grayish-orange-shadow);
+
+  /* text */
+  --key-text: var(--t3-light-yellow);
+  --del-key-text: var(--white);
+  --display-text: var(--t2-dark-gray-yellow);
 }
 .theme3 {
   --main-bg: var(--t3-main-bg);
@@ -78,13 +94,18 @@
   --t3-key-bg-toggle-shadow: var(--t3-soft-cyan-bg-shadow);
   --t3-key-bg: var(--t3-very-dark-voilet);
   --t3-key-bg-shadow: var(--t3-dark-magenta-shadow);
+
+  /* text */
+  --key-text: var(--t2-dark-gray-yellow);
+  --del-key-text: var(--white);
+  --display-text: var(--t3-light-yellow);
 }
 
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  min-width: 375px;
-  min-height: 100vh;
-  background: var(--t1-main-bg);
-  font-family: "League Spartan", sans-serif;
+
+  box-shadow: border-box;
 }
