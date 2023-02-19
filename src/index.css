@@ -14,6 +14,27 @@
   --t3-main-bg: hsl(268, 75%, 9%);
   --t3-toggle-keypad-bg: hsl(268, 71%, 12%);
   --t3-screen-bg: hsl(268, 71%, 12%);
+  /* theme 1 keys */
+  --t1-dark-blue: hsl(225, 21%, 49%);
+  --t1-dark-blue-shadow: hsl(224, 28%, 35%);
+  --t1-red-bg: hsl(6, 63%, 50%);
+  --t1-red-bg-shadow: hsl(6, 63%, 50%);
+  --t1-light-grayish-orange: hsl(30, 25%, 89%);
+  --t1-grayish-orange-shadow: hsl(28, 16%, 65%);
+  /* them 2 keys */
+  --t2-dark-cyan: hsl(185, 42%, 37%);
+  --t2-dark-cyan-shadow: hsl(185, 58%, 25%);
+  --t2-orange-bg: hsl(25, 98%, 40%);
+  --t2-orange-bg-shadow: hsl(25, 99%, 27%);
+  --t2-light-grayish-yellow: hsl(45, 7%, 89%);
+  --t2-grayish-orange-shadow: hsl(35, 11%, 61%);
+  /* theme 3 keys */
+  --t3-dark-violet: hsl(281, 89%, 26%);
+  --t3-vivid-magenta-shadow: hsl(285, 91%, 52%);
+  --t3-pure-cyan-bg: hsl(176, 100%, 44%);
+  --t3-soft-cyan-bg-shadow: hsl(177, 92%, 70%);
+  --t3-very-dark-voilet: hsl(268, 47%, 21%);
+  --t3-dark-magenta-shadow: hsl(290, 70%, 36%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,16 +47,37 @@
   --main-bg: var(--t1-main-bg);
   --toggle-keypad-bg: var(--t1-toggle-keypad-bg);
   --screen-bg: var(--t1-screen-bg);
+
+  --t1-key-del-bg: var(--t1-dark-blue);
+  --t1-key-shadow: var(--t1-dark-blue-shadow);
+  --t1-key-bg-toggle: var(--t1-red-bg);
+  --t1-key-bg-toggle-shadow: var(--t1-red-bg-shadow);
+  --t1-key-bg: var(--t1-light-grayish-orange);
+  --t1-key-bg-shadow: hsl(--t1-grayish-orange-shadow);
 }
 .theme2 {
   --main-bg: var(--t2-main-bg);
   --toggle-keypad-bg: var(--t2-toggle-keypad-bg);
   --screen-bg: var(--t2-screen-bg);
+
+  --t2-key-del-bg: var(--t2-dark-cyan);
+  --t2-key-shadow: var(--t2-dark-cyan-shadow);
+  --t2-key-bg-toggle: var(--t2-orange-bg);
+  --t2-key-bg-toggle-shadow: var(--t2-orange-bg-shadow);
+  --t2-key-bg: var(--t2-light-grayish-yellow);
+  --t2-key-bg-shadow: hsl(--t2-grayish-orange-shadow);
 }
 .theme3 {
   --main-bg: var(--t3-main-bg);
   --toggle-keypad-bg: var(--t3-toggle-keypad-bg);
   --screen-bg: var(--t3-screen-bg);
+
+  --t3-key-del-bg: var(--t3-dark-violet);
+  --t3-key-shadow: var(--t3-vivid-magenta-shadow);
+  --t3-key-bg-toggle: var(--t3-pure-cyan-bg);
+  --t3-key-bg-toggle-shadow: var(--t3-soft-cyan-bg-shadow);
+  --t3-key-bg: var(--t3-very-dark-voilet);
+  --t3-key-bg-shadow: var(--t3-dark-magenta-shadow);
 }
 
 body {
