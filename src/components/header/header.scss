@@ -1,12 +1,41 @@
-.dot-container {
-  width: 4rem;
-  height: 2rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: var(--display-text);
+}
 
-  .dot {
-    width: 1.8rem;
-    height: 18rem;
+.themes-level {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.5rem;
+}
+
+.theme-word {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.2rem;
+
+  p {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+}
+
+.dot-container {
+  width: 5rem;
+  height: 1.5rem;
+  background: var(--toggle-keypad-bg);
+  border-radius: 25px;
+  padding: 0.3rem 0.37rem;
+  margin-top: 0.2rem;
+
+  div {
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    background: red;
-    cursor: pointer;
+    background: var(--t1-key-bg-toggle);
   }
 }
