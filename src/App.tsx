@@ -1,10 +1,13 @@
 import { useState } from "react";
-import "./App.css";
+import Header from "./components/header/Header";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App ">
-      <h1>Calculator app</h1>
+    <div className="App theme1">
+      <div className="main">
+        <Header />
+      </div>
     </div>
   );
 }
