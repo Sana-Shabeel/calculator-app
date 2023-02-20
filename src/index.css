@@ -37,7 +37,7 @@
   --t3-dark-magenta-shadow: hsl(290, 70%, 36%);
 
   --t1-dark-gray-blue: hsl(221, 14%, 31%);
-  --white: hsl(0, 0, 100%);
+  --white: #fff;
   --t2-dark-gray-yellow: hsl(221, 14%, 31%);
   --t3-light-yellow: hsl(221, 14%, 31%);
   --t3-dark-blue: hsl(198, 20%, 13%);
@@ -107,5 +107,5 @@
   margin: 0;
   padding: 0;
 
-  box-shadow: border-box;
+  box-sizing: border-box;
 }
