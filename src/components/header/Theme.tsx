@@ -1,17 +1,25 @@
 import React from "react";
+import "./header.scss";
+
+/**
+ * class name X
+ *
+ *
+ *
+ *
+ * */
 
 const Theme = () => {
   return (
-    <div>
-      <div>
+    <div className="theme-changer">
+      <div className="themes-level">
         <p>1</p>
         <p>2</p>
-        <p>2</p>
+        <p>3</p>
       </div>
+
       <div className="dot-container">
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
+        <div className="dot"></div>
       </div>
     </div>
   );
