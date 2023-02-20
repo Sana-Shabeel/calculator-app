@@ -1,0 +1,20 @@
+.App {
+  min-width: 375px;
+  min-height: 100vh;
+  background: var(--t1-main-bg);
+  display: grid;
+  place-items: center;
+
+  .main {
+    width: 550px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
