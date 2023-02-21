@@ -27,9 +27,11 @@
 
   /* them 2 keys */
   --t2-dark-cyan: hsl(185, 42%, 37%);
+  --t2-dark-cyan-hover: hsl(185, 44%, 52%);
   --t2-dark-cyan-shadow: hsl(185, 58%, 25%);
   --t2-orange-bg: hsl(25, 98%, 40%);
   --t2-orange-bg-shadow: hsl(25, 99%, 27%);
+  --t2-orange-bg-hover: hsl(25, 80%, 61%);
   --t2-light-grayish-yellow: hsl(45, 7%, 89%);
   --t2-grayish-orange-shadow: hsl(35, 11%, 61%);
 
@@ -41,11 +43,16 @@
   --t3-very-dark-voilet: hsl(268, 47%, 21%);
   --t3-dark-magenta-shadow: hsl(290, 70%, 36%);
 
-  --t1-dark-gray-blue: hsl(221, 14%, 31%);
+  --t1-key-text: hsl(221, 14%, 31%);
+  --white: #fff;
+  --t2-key-text: hsl(60, 10%, 19%);
+  --t3-key-text: hsl(52, 100%, 62%);
+
+  /* --t1-dark-gray-blue: hsl(221, 14%, 31%);
   --white: #fff;
   --t2-dark-gray-yellow: hsl(221, 14%, 31%);
   --t3-light-yellow: hsl(221, 14%, 31%);
-  --t3-dark-blue: hsl(198, 20%, 13%);
+  --t3-dark-blue: hsl(198, 20%, 13%); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -65,11 +72,12 @@
   --key-bg-toggle: var(--t1-red-bg);
   --key-bg-toggle-shadow: var(--t1-red-bg-shadow);
   --key-bg-toggle-hover: var(--t1-red-bg-hover);
-  --t1-key-bg: var(--t1-light-grayish-orange);
-  --t1-key-bg-shadow: hsl(--t1-grayish-orange-shadow);
+  --key-bg: var(--t1-light-grayish-orange);
+  --key-bg-shadow: var(--t1-grayish-orange-shadow);
 
   /* text */
-  --key-text: var(--t1-dark-gray-blue);
+  --key-text: var(--t1-key-text);
+  --key-hover: var(--white);
   --del-key-text: var(--white);
   --display-text: var(--white);
 }
@@ -80,13 +88,16 @@
 
   --del-key-bg: var(--t2-dark-cyan);
   --del-key-bg-shadow: var(--t2-dark-cyan-shadow);
+  --del-key-bg-hover: var(--t2-dark-cyan-hover);
   --key-bg-toggle: var(--t2-orange-bg);
   --key-bg-toggle-shadow: var(--t2-orange-bg-shadow);
-  --t2-key-bg: var(--t2-light-grayish-yellow);
-  --t2-key-bg-shadow: hsl(--t2-grayish-orange-shadow);
+  --key-bg-toggle-hover: var(--t2-orange-bg-hover);
+  --key-bg: var(--t2-light-grayish-yellow);
+  --key-bg-shadow: var(--t2-grayish-orange-shadow);
 
   /* text */
-  --key-text: var(--t3-light-yellow);
+  --key-text: var(--t2-key-text);
+  --key-hover: var(--white);
   --del-key-text: var(--white);
   --display-text: var(--t2-dark-gray-yellow);
 }
@@ -97,15 +108,18 @@
 
   --del-key-bg: var(--t3-dark-violet);
   --del-key-bg-shadow: var(--t3-vivid-magenta-shadow);
+  --del-key-bg-hover: var(--t3-vivid-magenta-shadow);
   --key-bg-toggle: var(--t3-pure-cyan-bg);
   --key-bg-toggle-shadow: var(--t3-soft-cyan-bg-shadow);
-  --t3-key-bg: var(--t3-very-dark-voilet);
-  --t3-key-bg-shadow: var(--t3-dark-magenta-shadow);
+  --key-bg-toggle-hover: var(--t3-soft-cyan-bg-shadow);
+  --key-bg: var(--t3-very-dark-voilet);
+  --key-bg-shadow: var(--t3-dark-magenta-shadow);
 
   /* text */
-  --key-text: var(--t2-dark-gray-yellow);
+  --key-text: var(--t3-key-text);
+  --key-hover: var(--t3-vivid-magenta-shadow);
   --del-key-text: var(--white);
-  --display-text: var(--t3-light-yellow);
+  --display-text: var(--t3-key-text);
 }
 
 *,
