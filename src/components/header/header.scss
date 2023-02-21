@@ -33,16 +33,17 @@
   margin-top: 0.2rem;
 }
 
-form {
+input[type="range"] {
+  -webkit-appearance: none;
   width: 100%;
-  // border: 3px solid yellow;
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    background: transparent;
-  }
+  background: transparent;
 }
+
+// form {
+//   width: 100%;
+//   // border: 3px solid yellow;
+
+// }
 
 /* Special styling for WebKit/Blink */
 input[type="range"]::-webkit-slider-thumb {
