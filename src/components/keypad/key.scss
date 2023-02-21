@@ -1,0 +1,83 @@
+.keypad {
+  background: var(--toggle-keypad-bg);
+  //   border: 1px solid green;
+
+  padding: 1.4rem;
+  margin-inline: auto;
+  // border: 1px solid green;'
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.5rem;
+  grid-template-areas:
+    "x x x x"
+    "x x x x"
+    "x x x x"
+    "x x x x"
+    "reset reset equal equal";
+
+  @media only screen and (max-width: 600px) {
+    gap: 1rem;
+  }
+}
+
+.key {
+  width: 100%;
+  grid-area: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 0.7em;
+
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: inherit;
+
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: hsl(28, 16%, 65%) 0px 5px 0px 0px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--white);
+  }
+
+  &:active {
+    background-color: var(--t1-key-bg);
+    /*50, 168, 80*/
+    box-shadow: var(--t1-key-bg-shadow) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+    padding: 0.8em 1.2em;
+  }
+}
+
+.del,
+.reset {
+  background: var(--del-key-bg);
+  box-shadow: var(--del-key-bg-shadow) 0px 5px 0px 0px;
+  color: var(--white);
+
+  &:hover {
+    background: var(--del-key-bg-hover);
+  }
+}
+
+.reset {
+  grid-area: reset;
+}
+.equal {
+  background: var(--key-bg-toggle);
+  box-shadow: var(--key-bg-toggle-shadow) 0px 5px 0px 0px;
+  color: var(--white);
+  grid-area: equal;
+
+  &:hover {
+    background: var(--key-bg-toggle-hover);
+  }
+}
