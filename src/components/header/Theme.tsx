@@ -1,14 +1,6 @@
 import React from "react";
 import "./header.scss";
 
-/**
- * class name X
- *
- *
- *
- *
- * */
-
 const Theme = () => {
   return (
     <div className="theme-changer">
@@ -19,7 +11,10 @@ const Theme = () => {
       </div>
 
       <div className="dot-container">
-        <div className="dot"></div>
+        <form className="themes-slider">
+          {/* <label htmlFor="slider">THEME</label> */}
+          <input type="range" name="slider" min="1" max="3" id="slider" />
+        </form>
       </div>
     </div>
   );
