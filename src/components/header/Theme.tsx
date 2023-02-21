@@ -11,10 +11,14 @@ const Theme = () => {
       </div>
 
       <div className="dot-container">
-        <form className="themes-slider">
-          {/* <label htmlFor="slider">THEME</label> */}
-          <input type="range" name="slider" min="1" max="3" id="slider" />
-        </form>
+        <input
+          type="range"
+          name="slider"
+          min="1"
+          max="3"
+          id="slider"
+          onChange={(e) => console.log(e.target.value)}
+        />
       </div>
     </div>
   );
