@@ -31,11 +31,35 @@
   border-radius: 25px;
   padding: 0.3rem 0.37rem;
   margin-top: 0.2rem;
+}
 
-  div {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background: var(--t1-key-bg-toggle);
+form {
+  width: 100%;
+  // border: 3px solid yellow;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
   }
+}
+
+/* Special styling for WebKit/Blink */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--key-bg-toggle);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  background: var(--key-bg-toggle);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
