@@ -4,17 +4,12 @@
   background: var(--t1-main-bg);
   display: grid;
   place-items: center;
-
-  .main {
-    width: 550px;
-  }
 }
 
-.flex {
-  display: flex;
-}
-
-.center {
-  display: grid;
-  place-items: center;
+.screen {
+  height: 130px;
+  background: var(--screen-bg);
+  color: var(--white);
+  border-radius: 8px;
+  margin: 1rem 0;
 }
