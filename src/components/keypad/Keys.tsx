@@ -1,8 +1,11 @@
 import React from "react";
-import Key from "./Key";
 import "./key.scss";
 
-const Keys = () => {
+interface Props {
+  getKeyValueHandler: (key: string) => void;
+}
+
+const Keys = ({ getKeyValueHandler }: Props) => {
   const calcKeys = [
     { key: "7", classname: "key" },
     { key: "8", classname: "key" },
@@ -26,7 +29,13 @@ const Keys = () => {
   return (
     <div className="keypad">
       {calcKeys.map(({ key, classname }, idx) => (
-        <Key key={idx} value={key} classname={classname} />
+        <input
+          key={idx}
+          type="button"
+          value={key}
+          className={classname}
+          onClick={(e) => getKeyValueHandler(key)}
+        />
       ))}
     </div>
   );
