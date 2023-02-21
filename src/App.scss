@@ -4,12 +4,26 @@
   background: var(--main-bg);
   display: grid;
   place-items: center;
+  transition: all 1.5s;
+}
+
+.main {
+  max-width: 540px;
 }
 
 .screen {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 130px;
   background: var(--screen-bg);
-  color: var(--white);
   border-radius: 8px;
   margin: 1rem 0;
+  padding-inline: 1rem;
+  overflow: hidden;
+
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--display-text);
 }
